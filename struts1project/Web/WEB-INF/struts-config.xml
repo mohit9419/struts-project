@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<form-beans>
+
+<form-bean type="com.psl.actionforms.HelloWorldForm" name="helloWorldForm"/>
+
+</form-beans>
+
+<global-forwards>
+
+<forward name="helloWorld" path="/helloWorld.do"/>
+
+</global-forwards>
+
+
+<action-mappings>
+
+
+<action type="com.psl.actions.HelloWorldAction" name="helloWorldForm" path="/helloWorld">
+
+<forward name="success" path="/helloWorld.jsp"/>
+
+</action>
+
+</action-mappings>
+
+</struts-config>
